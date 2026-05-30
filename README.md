@@ -28,8 +28,6 @@ The system supports:
 
 ---
 
----
-
 ## Running Locally
 
 ### 1. Create Virtual Environment
