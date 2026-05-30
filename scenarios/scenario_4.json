@@ -1,0 +1,51 @@
+{
+    "scenario_id": "scenario_4",
+  "name": "Scenario 4 - Optimized Routing",
+
+  "weights": {
+    "individual": 1.0,
+    "operator": 2.0,
+    "overall": 1.0
+  },
+
+  "route": {
+    "name": "Bengaluru-Kochi",
+    "total_distance": 540,
+    "stations": [
+      { "id": "A", "distance_from_start": 100, "chargers": 1 },
+      { "id": "B", "distance_from_start": 220, "chargers": 1 },
+      { "id": "C", "distance_from_start": 320, "chargers": 1 },
+      { "id": "D", "distance_from_start": 440, "chargers": 1 }
+    ]
+  },
+
+  "vehicle_config": {
+    "battery_range_km": 240,
+    "speed_kmph": 60,
+    "charge_duration_min": 25
+  },
+
+  "buses": [
+    { "id": "bus-BK-01", "operator": "kpn", "direction": "forward", "departure_time": "19:00" },
+    { "id": "bus-BK-02", "operator": "freshbus", "direction": "forward", "departure_time": "19:15" },
+    { "id": "bus-BK-03", "operator": "flixbus", "direction": "forward", "departure_time": "19:30" },
+    { "id": "bus-BK-04", "operator": "kpn", "direction": "forward", "departure_time": "19:45" },
+    { "id": "bus-BK-05", "operator": "freshbus", "direction": "forward", "departure_time": "20:00" },
+    { "id": "bus-BK-06", "operator": "flixbus", "direction": "forward", "departure_time": "20:15" },
+    { "id": "bus-BK-07", "operator": "kpn", "direction": "forward", "departure_time": "20:30" },
+    { "id": "bus-BK-08", "operator": "freshbus", "direction": "forward", "departure_time": "20:45" },
+    { "id": "bus-BK-09", "operator": "flixbus", "direction": "forward", "departure_time": "21:00" },
+    { "id": "bus-BK-10", "operator": "kpn", "direction": "forward", "departure_time": "21:15" },
+
+    { "id": "bus-KB-01", "operator": "freshbus", "direction": "backward", "departure_time": "19:00" },
+    { "id": "bus-KB-02", "operator": "flixbus", "direction": "backward", "departure_time": "19:15" },
+    { "id": "bus-KB-03", "operator": "kpn", "direction": "backward", "departure_time": "19:30" },
+    { "id": "bus-KB-04", "operator": "freshbus", "direction": "backward", "departure_time": "19:45" },
+    { "id": "bus-KB-05", "operator": "flixbus", "direction": "backward", "departure_time": "20:00" },
+    { "id": "bus-KB-06", "operator": "kpn", "direction": "backward", "departure_time": "20:15" },
+    { "id": "bus-KB-07", "operator": "freshbus", "direction": "backward", "departure_time": "20:30" },
+    { "id": "bus-KB-08", "operator": "flixbus", "direction": "backward", "departure_time": "20:45" },
+    { "id": "bus-KB-09", "operator": "kpn", "direction": "backward", "departure_time": "21:00" },
+    { "id": "bus-KB-10", "operator": "freshbus", "direction": "backward", "departure_time": "21:15" }
+  ]
+}
