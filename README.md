@@ -28,27 +28,6 @@ The system supports:
 
 ---
 
-## Project Structure
-
-```text
-project/
-│
-├── app.py
-├── scenarios/
-│
-├── engine/
-│   ├── models.py
-│   ├── loader.py
-│   ├── plan_generator.py
-│   ├── cp_scheduler.py
-│   ├── objectives.py
-│   ├── solution_builder.py
-│   ├── route_utils.py
-│   └── timeline.py
-│
-└── docs/
-```
-
 ---
 
 ## Running Locally
