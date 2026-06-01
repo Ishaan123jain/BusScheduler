@@ -80,6 +80,20 @@ class CPScheduler:
             self.scenario.vehicle_config
         )
 
+        station_intervals = defaultdict(list)
+
+        station_usage = defaultdict(int)
+
+        operator_usage = defaultdict(
+            lambda: defaultdict(int)
+        )
+
+        wait_vars = []
+
+        arrival_vars = []
+
+        operator_wait_vars = []
+
         for bus in self.scenario.buses:
 
             feasible_plans = (
@@ -97,32 +111,6 @@ class CPScheduler:
                     bus.departure_time
                 )
             )
-
-        station_intervals = defaultdict(list)
-
-        station_usage = defaultdict(int)
-
-        operator_usage = defaultdict(
-            lambda: defaultdict(int)
-        )
-
-        wait_vars = []
-
-        arrival_vars = []
-
-        operator_wait_vars = []
-
-        for bus in self.scenario.buses:
-
-            departure_minutes = (
-                time_to_minutes(
-                    bus.departure_time
-                )
-            )
-
-            # --------------------------------------------------
-            # PLAN SELECTION
-            # --------------------------------------------------
 
             chosen_plan = min(
                 feasible_plans,

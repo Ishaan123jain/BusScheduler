@@ -30,7 +30,7 @@ The system supports:
 
 ## Running Locally
 
-### 1. Create Virtual Environment
+### 1. Create the Virtual Environment
 
 ```bash
 python -m venv .venv
